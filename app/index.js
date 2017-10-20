@@ -77,12 +77,6 @@ ReactDOM.render(
  */
    
     
-        ReactDOM.render(<input value="hi" />,  document.getElementById('app'));
-        
-        setTimeout(function() {
-          ReactDOM.render(<input value={null} />,  document.getElementById('app'));
-        }, 3000);
-
 
 
 
