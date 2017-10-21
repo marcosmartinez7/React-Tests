@@ -1,4 +1,4 @@
-# React-Tests
+# react-quickstart
 
 A collection of basic react components embedded in a single html page 
 
