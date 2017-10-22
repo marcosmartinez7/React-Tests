@@ -12,3 +12,10 @@ At project folder, run:
  - npm start
  
  Open http://localhost:8080
+
+
+Test components with https://storybook.js.org/:
+
+- npm i -g @storybook/cli
+- npm build-storybook
+- npm storybook
