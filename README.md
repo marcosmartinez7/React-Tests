@@ -7,6 +7,8 @@ Install:
 
 At project folder, run: 
 
- - npm install webpack-dev-server
+ - npm i
  - npm build
  - npm start
+ 
+ Open http://localhost:8080
