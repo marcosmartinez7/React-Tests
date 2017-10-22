@@ -7,6 +7,16 @@ Install:
 
 At project folder, run: 
 
- - npm install webpack-dev-server
+ - npm i
  - npm build
  - npm start
+ - Open http://localhost:8080
+ 
+
+Test components with https://storybook.js.org/:
+
+- npm i -g @storybook/cli
+- npm run storybook
+-  Open http://localhost:6006
+
+
