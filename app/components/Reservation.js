@@ -29,20 +29,17 @@ class Reservation extends React.Component{
         partialState[event.target.name] = valueProp;
         this.setState(partialState);
         */
-        
-    
     }
 
     render(){
         return(
             <form>
                  <label> accepted <input name="accepted" type="checkbox" checked={this.state.accepted} onChange={this.handleInputChange}/>
-</label>
+                 </label>
                  <label> number of guests <input name="numOfGuests" type="number" value={this.state.numOfGuests} onChange={this.handleInputChange}/>
-</label>
+                </label>
             </form>
-           
-            
+
         );
     }
 }
