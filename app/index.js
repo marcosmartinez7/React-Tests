@@ -64,13 +64,40 @@ document.getElementById('app6')
 );
 
 
-var ProductList = require('./components/ProductList');
+var ProductsApp = require('./components/ProductsApp');
 
-const app7 = <ProductList />
+const app7 = <ProductsApp />
 ReactDOM.render(
 app7,
 document.getElementById('app7')
 );
+
+
+var Calculator = require('./components/Calculator');
+
+const app8 = <Calculator />
+ReactDOM.render(
+app8,
+document.getElementById('app8')
+);
+
+const products = [
+  {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
+  {category: "Sporting Goods", price: "$9.99", stocked: true, name: "Baseball"},
+  {category: "Sporting Goods", price: "$29.99", stocked: false, name: "Basketball"},
+  {category: "Electronics", price: "$99.99", stocked: true, name: "iPod Touch"},
+  {category: "Electronics", price: "$399.99", stocked: false, name: "iPhone 5"},
+  {category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7"}
+];
+
+var FilterableProductTable = require('./search/FilterableProductTable');
+
+const app9 = <FilterableProductTable products = {products} />
+ReactDOM.render(
+app9,
+document.getElementById('app9')
+);
+
 
 
 

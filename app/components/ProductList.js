@@ -10,11 +10,13 @@ var ProductList = createReactClass({
     },
 
     render(){
+        let productsArray = this.props.products.map((product)=>{
+            return <Product key={product.name} name={product.name} price={product.price} onBuy={this.addItem}/>
+        });
+       
          return(
              <div>
-                <Product name="Android" price={120} onBuy ={this.addItem} />
-                <Product name="Apple" price={110} onBuy ={this.addItem} />
-                <Product name="Nokia" price={100} onBuy ={this.addItem} />
+                {productsArray}
                 <Total total={this.state.total}/>
             </div>
          )
@@ -22,7 +24,7 @@ var ProductList = createReactClass({
 
      addItem(price){
          this.setState(function(prevState, prevProps){
-            return { total : (prevState.total + price)};
+            return { total : prevState.total + (+price)};
          })
      }
 
